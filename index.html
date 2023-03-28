@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assents/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Prime Video</title>
+    </head>
+    <body>
+        <header >
+            <nav>
+                <ul class="navegation">
+                    <li><a href="#"> <img src="./assents/logo.png" alt="Logo do Prime Video" class="logo"></a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Canais</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Minha área</a></li>                    
+                </ul>
+            </nav>
+            <div class="canto">
+                <img src="./assents/search.png" alt="botão de pesquisa" class="search">
+                <img src="./assents/perfil.1t.png" alt="perfil" class="perfil">
+            </div>
+        </header>
+        <section id="content">
+            <main>
+                <img src="./assents/vox-machina-logo.png" alt="Logo A lenda de Vox Machina" class="logo-vox">
+                <div class="btb-box" >
+                    <div class="btn" >
+                        <select id="select"  onclick="atualizandoSelect()">
+                            <option value="temporada1" > Temporada 1</option>
+                            <option value="temporada2" > Temporada 2</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="infor">
+                        <img src="./assents/imdb.png" alt="imagem do imdb" class=" imagem do imdb">
+                        <span class="classificacao">8,4</span>
+                        <span class="classificacao">2022</span>
+                        <img src="./assents/descricao-do-audio.png" alt=" imagem da descricao da audio" class="imdb">
+                        <img   src="./assents/classificacao2.png" alt=" imagem da classificação de idade" class="imdb" id="classificacaoDeIdade">
+                        <img src="./assents/comentario.png" alt="imagem de comentario" class="imdb">
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button  class="btb-box2">
+                        <img src="./assents/botao-play.png" alt="botão play" class="play">
+                        <div  class="trailer">
+                            <h6>Episódio 11</h6>
+                            <p>Continuar assistindo</p>
+                        </div>                            
+                    </button>
+                    <button class="botoes-de-nav">
+                        <a class="linkDoBotao" href="https://www.youtube.com/results?search_query=the+legend+of+vox+machina+trailer+" target="_blank"><img  src="./assents/play-menor.png" alt=""></a>
+                            
+                    </button>
+                    <button class="botoes-de-nav">
+                        <a href="./botaoDeAdicionar/index.html" target="_blank"><img src="./assents/sinal-de-soma.png" alt=""></a>
+                            
+                    </button>
+                    <button class="botoes-de-nav">
+                        <a href="./botaoDeAssistirComOutrasPessoas/index.html" target="_blank"> <img src="./assents/img-do-confete.png" alt=""></a>
+                           
+                    </button>
+                    <button class="botoes-de-nav">
+                        <a href="./botaoDoDownload/index.html" target="_blank"> <img src="./assents/img-de-dowload.png" alt=""></a>
+                           
+                    </button>
+                </div>
+                <div class="modal">
+                    <div class="conteudo-modal">
+                        <span class="fechar-modal">X</span>
+                        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JiRDN2zTR00" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <p class="text">
+                        Desordeiros e maltrapilhos, são desajustados que viraram mercenários. O grupo Vox Machina está  mais interessado em dinheiro fácil e cerveja barata do que em proteger o reino. Mas quando o reino é ameaçado pelo mal, esses encrenqueiros percebem que são os únicos capazes de restaurar a justiça. O que começou como um serviço simples agora é a história de origem dos mais novos heróis de Exandria.
+                </p>
+            </main>
+            <div class="cards">
+                <div class="card">
+                    <img class="primeiroBloco" src="./assents/bloco1-temporada1.png" alt=""></div>
+                <div class="card">
+                    <img class="segundoBloco" src="./assents/bloco2-temporada1.png" alt=""></div>
+                <div class="card">
+                    <img class="terceiroBloco" src="./assents/bloco3-temporada1.png" alt=""></div>
+                <div class="card">
+                    <img class="quartoBloco" src="./assents/bloco4-temporada1.png" alt=""></div>
+            </div>
+            <div id="mobile">
+                <section class="conteiner">
+                    <figure>
+                        <img class="bg-vox" src="./assents/bg-vox-machina-temporada1.jpg" alt="">
+
+                        <img src="./assents/vox-machina-logo.png" alt="Logo A lenda de Vox Machina" class="logo-vox-machina">
+                    </figure>
+                    <h1>Conheça The Legend Of Vox Machina</h1>
+                    <p class="texto-principal">Vox Machina é inspirada em histórias e personagens de uma campanha de RPG de Dungeons & Dragons da Critica Role e conta com personagens que tem suas próprias especialidade para ajudar nas lutas.É uma série animada de fantasia e aventura para adultos que segue um grupo de desajustados que gostam de beber e brigar. </p>
+
+                    <h2 >Conheça os Personagens</h2>
+                    <div class="personagens"> 
+                        <h3>Vex'ahlia</h3> 
+                        <figure>
+                            <img src="./assents/vex.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Vex'ahlia em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p class="textos">
+                            Vex'ahlia e Vax'ildan são irmãos gêmeos e por esse fato eles compartilham a mesma origem. Nascidos de uma mãe humana e um pai élfico os irmãos viveram uma vida humilde no mundo dos homens. Quando completaram 10 anos os gêmeos foram convocados pelo pai a ir para a cidade élfica de Syngorn. <br> Vex tornou-se uma Arqueira com talentos na mobilidade, predileção de terreno, rastreamento e evasão.
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3>Vax'ildan</h3>
+                        <figure>
+                            <img src="./assents/vax.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Vax'ildan em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Devido a sua mãe ser humana os dois foram indesejados entre os parentes de seu pai e, eventualmente, optaram por voltar para casa. <br> Vax tornou-se um ladino que é uma especialidade em abrir fechaduras, detectar e desarmar armadilhas e outras atividades furtivas e ele tem adagas encantadas que retornam à sua mão após golpear.    
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3>Keyleth</h3>
+                        <figure>
+                            <img src="./assents/keyleth.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Keyleth em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Keyleth é uma druida meio-elfo que vem da tribo do ar de Ashari. Partindo de sua casa sozinha aos 20 anos, ela agora deve completar o julgamento Aramenté necessário para herdar a verdadeira liderança, caminhando pela terra e conhecendo as outras tribos elementais Ashari, provando-se digna para se tornar a futura diretora Ashari. <br>
+                            Druidas tem uma conexão íntima com a natureza podendo manipulação os quadro elementos. Eles podem se “comunicar” com animais e plantas, como também assumir a forma de animais.  
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3> Percival "Percy" de Rolo</h3>
+                        <figure>
+                            <img src="./assents/percy.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Percy em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Percy é da familia De Rolo onde eram os líderes gentis e justos de Whitestone, populares entre os habitantes locais, apesar de sua nobreza. Quando Percival estava em sua adolescência, a casa de Rolo hospedou Silas e Delilah Briarwood, que gradualmente se infiltraram na confiança da família antes de traí-los violentamente em uma aquisição do castelo de Whitestone. Embora a maioria de sua família tenha sido morta, Percy e sua irmã, Cassandra, foram presos e torturados. Eles tentaram uma fuga, mas apenas Percy conseguiu. <br> Após escapar, Percy se especializou em armas é virou Pistoleiro onde o  próprio constrói seus armamentos. 
+                        </p>
+                    </div>
+                    <div class="personagens">  
+                        <h3>Pike Triackfoot</h3>
+                        <figure>
+                            <img src="./assents/pike.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Pike em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p>
+                            Pike é uma gnomo que vive com o seu tataravô em Westrunn onde ela se encontra na religião, adorando a deusa Everlight e se tornando uma clériga e se especializando em magias de cura, além de afastar o mal e podendo ultilizar marretas e escudos para se defender. Após Grog ter protegido seu tataravô do Rebanho das Tempestades, os dois acabam se tornando grandes amigos. <br> O poder de Pike deriva de suas crenças religiosas e status de clérigo, invocando o Everlight para obter força para curar seu amigos e a si própria. O  poder de Everlight também pode ser usado como uma ferramenta ofensiva.
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3>Scanlan Shorthalt </h3>
+                        <figure>
+                            <img src="./assents/scanlan.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Scanlan em A Lenda de Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Scanlan é um gnomo que foi criado por sua mãe sozinho na pobreza, mas ele a apoiou com músico. Scanlan com um bom bardo está diretamente ligado à sua proeza musical, oferecendo-lhe uma grande variedade de feitiços para lançar com extravagância característica, podendo conjurar formas físicas, como o feitiço Mão de Bigby, que o permite manipule um punho gigante feito de magia roxa. Usando seu  charme e carisma para conquistar o quer. <br> Bardos também conseguem usar magia que junto com sua música podem causar medo, fascinar, inspirar, revigorar e até hipnotizar um alvo ou um grande número de pessoas.
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3>Grog Strongjaw</h3>
+                        <figure>
+                            <img src="./assents/grod.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Grog em The Legend of Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Grog nasceu no rebanho de tempestades de seu tio Kevdak, onde eles seguem a cultura guerreira de violência e honra. Grog gostava do constante desafio físico de lutar contra outros Golias no rebanho para provar sua força, mas enquanto o rebanho das Tempestades estava feliz em dizimar alvos mais fracos do que eles, Grog Strongjaw encontrou uma consciência em algum lugar dentro daquele enorme crânio. Após proteger um gnomo ele foi banido do rebanho das Tempestades e foi onde ele encontrou Pike e viraram amigos. <br> Grog é da classe de Bárbaros onde eles não têm o talento para feitiçaria, mas sua biologia de Golias fornece imensa força física para lutas corpo a corpo, movimentos rápidos, resiliência alta. Sua arma é um machado gigante.
+                        </p>
+                    </div>
+                    <div class="personagens"> 
+                        <h3>Trinket</h3>
+                        <figure>
+                            <img src="./assents/trinket.gif" alt="">
+                        </figure>
+                        <figcaption>
+                            Trinket em The Legend of Vox Machina (Reprodução / Prime Video)
+                        </figcaption>
+                        <p> 
+                            Trinket é um urso que foi salvo por Vex ainda filhote de caçadores furtivos. Capturada pelos próprios bandidos. Vex matou a mãe de Trinket por misericórdia, antes de perceber o bebê escondido nas proximidades e adotá-lo como seu companheiro. <br>Trinket participa das lutas sempre protegendo o grupo Vox Machina.
+                        </p>
+                    </div>
+                </section>
+                
+                    
+            </div>
+        </section>
+        <footer>
+            By Abgail Diniz     
+        </footer>
+
+        <script src="https://kit.fontawesome.com/30e54eb9f8.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bg-temporada-url: url(./assents/bg-vox-machina-temporada1.jpg);
+}
+
+.segundaT{
+    --bg-temporada-url: url(./assents/bg-vox-machina-temporada2.jpg);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    max-height: 72px;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f171e;
+    background-image:  linear-gradient(180deg,#1b2530 0,rgba(27,37,48,.85));
+    background-repeat: repeat-x;
+
+}
+
+header  .logo {
+    max-width: 120px;
+    margin-left: 10px;
+
+    filter: invert(1);
+    border: none;
+}
+
+.navegation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navegation li a{
+    color: rgba(242,244,246,.9);
+    font-size: 17px;
+    transition: all .5s;
+}
+
+.navegation li a:hover{
+    border-bottom: 2px solid #fff;
+}
+.navegation li:first-child a:hover{
+    border-bottom: none;
+}
+
+
+header .canto{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.canto .search{
+    width: 17px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.perfil{
+    width: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+body #content{
+    flex-grow: 1;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.991) 0%, rgba(92,92,92,0) 50%, rgba(255,255,255,0) 100%), var(--bg-temporada-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*Main*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 37em;
+    margin-left: 2em;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+main .logo-vox{
+    margin-top: 2.5em;
+    width: 32em;
+}
+
+main .btb-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    max-height: 40px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: #425265;
+    background-image: none;
+    flex: 1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    padding: 14px 48px 14px 20px;
+
+}
+.btn select::-ms-expand{
+    display: none;
+}
+.btn{
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    width: 9em;
+    height: 3em;
+    
+    background: #425265;
+    overflow: hidden;
+}
+.btn:hover{
+    background: #2d3846;
+}
+.btb-box .btn:focus{
+    background: #2d3846;
+}
+
+.btn i{
+    position: absolute;
+    right: 9px;
+    top: 20px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.btn select:focus + i{
+    color: #2d3846;
+}
+
+.btb-box .infor{
+    max-width: 50em;
+    display: flex;
+    gap: 15px;
+}
+
+.btb-box .imdb{
+    width: 30px;
+}
+
+.btb-box .classificacao{
+    color: #425265;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.classificacao:nth-child(2n){
+    margin-left: -10px;
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    height: 4.5em;
+}
+.botoes .btb-box2{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #fff;
+    background: #0f79af;
+
+    width: 15em; 
+    padding: 10px 0px;
+    margin-top: 1em;
+    
+    border-radius: 3px;
+    border-bottom: 2.5px solid #fff ;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+.btb-box2:hover{
+    background: #138ecc;
+}
+
+.btb-box2 .play{
+    width: 35px;
+    margin-left: 10px;
+}
+
+.btb-box2 .trailer h6{
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 4em;
+
+
+}
+.btb-box2 .trailer p{
+    font-size: 15px;
+}
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+
+}
+.conteudo-modal{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+
+}
+
+.fechar-modal{
+    background-color: #ffffff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.moda iframe{
+    border-width: 0;
+    width: 64px;
+    height: 360px;
+
+}
+
+.modal.aberto{
+    opacity: 1;
+    visibility: visible;
+
+}
+.botoes .botoes-de-nav{
+    background-color: transparent;
+    border: none;
+}
+.botoes .botoes-de-nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #566b84;
+    border: 1px solid #566b84;
+    margin-top: 1em;
+    margin-left: 13px;
+    border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+}
+.botoes .botoes-de-nav a img{
+
+    height: 2em;
+    width:  1.8em;
+
+}
+.botoes-de-nav a:hover{
+    background: #6c87a7;
+    border: 1px solid #6c87a7;
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+    margin: 1em 0 0.3em ;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin: 1% 0 0 15% ;
+
+}
+
+.cards .card{
+    max-height: 100px;
+    max-width: 250px;
+    box-shadow: 12px 0 32px 2px black;
+
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.cards .card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.cards .card:hover ~ .card{
+    transform: translateX(140px);
+}
+
+.cards .card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+#mobile{
+    display: none;
+}
+#mobile .conteiner{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    
+    background-color:#0f171e;
+    text-align: justify;
+    color: #fff;
+}
+.conteiner figure .bg-vox {
+    max-width: 95vw;
+    display: block;
+    margin: auto;
+}
+#mobile .conteiner .logo-vox-machina{
+    max-width: 90vw;
+    display: block;
+    margin: 5% 20% 7% 20%;
+}
+#mobile .conteiner h1{
+    max-width: 90vw;
+    font-size: 21px;
+    margin-bottom: 15px;    
+}
+
+#mobile .conteiner .texto-principal{
+    max-width: 86vw;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+#mobile .conteiner h2{
+    max-width: 90vw;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#mobile .conteiner .personagens h3{
+    font-size: 18px;
+    text-decoration: underline;
+}
+#mobile .conteiner .personagens img{
+    max-width: 60vw;
+    margin-left: 18%;
+    margin-top: 20px;
+}
+
+#mobile .conteiner .personagens figcaption{
+    max-width: 55vw;
+    font-size: 10px;
+    margin-left: 23%;
+}
+
+#mobile .conteiner .personagens p{
+    max-width: 85vw;
+    font-size: 15px;
+    line-height: 21.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #0f171e;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 2px 0 12px 0;
+
+}
+
+@media(max-width: 1440px){
+    .text{
+        font-size: 15px;
+    }
+    .cards .card{
+        max-height: 100px;
+        max-width: 250px; 
+    }
+}
+
+
+
+@media(max-width: 769px){
+
+    header {
+        display: none;
+    }
+
+    .btb-box2{
+        display: none;
+    } 
+    .botoes{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .cards{
+        display: none;
+    }
+    body{
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    body #content{
+        background-image: none;
+        background-color: #0f171e;
+    }
+    main{
+        margin-left: 0;
+    }
+    main .logo-vox{
+        display: none;
+    }    
+    main .btb-box{
+        display: none;
+    }    
+
+    #mobile{
+        display: flex;
+    }
+    footer{
+        background-color: #18242f;
+    }   
+ 
+}
