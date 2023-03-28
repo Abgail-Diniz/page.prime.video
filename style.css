@@ -341,6 +341,7 @@ select{
 }
 #mobile{
     display: none;
+    overflow-x: hidden;
 }
 #mobile .conteiner{
     flex-grow: 1;
@@ -449,7 +450,6 @@ footer{
     }
     body{
         overflow-y: visible;
-        overflow-x: hidden;
     }
     body #content{
         background-image: none;
